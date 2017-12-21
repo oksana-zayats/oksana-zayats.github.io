@@ -1,0 +1,137 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.container,
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#contc {
+    justify-content: center;
+}
+
+/* Плавні зміни властивостей лінків */
+
+a {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+/*************************************/
+
+/* Зміни CSS коду розпочинати звідси */
+
+/*************************************/
+
+section {
+    /*    min-height: 100vh; */
+    !!! Тимчасово для відладки !!! Висота секцій рівна висоті екрану */
+    /*    padding: 50px 0px;   Внутрішні відступи зверху та знизу у секціях <section> */
+    display: flex;
+    align-content: center;
+}
+
+#s2 {
+    min-height: 100vh;
+    background-image: url("../image/img3.png");
+    background-size: cover;
+    text-align: left;
+    color: #fff;
+    padding: 100px 0;
+}
+
+#s2 h1 {
+     margin-bottom: 90px;
+    border: 2px solid #fff;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 140%;
+    text-align: center;
+}
+
+#s2 p {
+    line-height: 140%;
+}
+
+#s4 {
+    min-height: 85vh;
+    background-image: url("../image/img5.png");
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+
+}
+
+#s4 h2 {
+    margin-bottom: 70px;
+    border: 2px solid #fff;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 140%;
+    text-align: center;
+}
+
+#s4 p {
+    text-align: center;
+    font-size: 1.5 rem;
+    color: #fff;
+}
+
+
+
+a {
+    color: #c00;
+    /* Колір текстових лінків */
+}
+
+a:focus,
+a:hover {
+    color: #c00;
+    /* Колір текстових лінків для псевдокласів */
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contacts a {
+    border: 2px solid #fff;
+    flex-basis: 80px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+/**************************************/
+
+/* Зміна властивостей для breakpoints */
+
+/**************************************/
+
+@media screen and (max-width:575px) {
+    .container,
+    .navbar {
+        padding-left: 15px;
+        /* Для Small додати відступи */
+        padding-right: 15px;
+        /* зліва та справа у .container та .navbar */
+    }
+
+    /* Приклад зміни відступів зверху, знизу для секцій на Small екранах */
+    section {
+        padding: 25px 0;
+    }
+
+}
+
+@media screen and (max-width:767px) {}
